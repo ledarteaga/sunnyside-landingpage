@@ -2,11 +2,11 @@
   <header
     class="flex justify-between bg-transparent absolute top-7 w-full px-7 items-center"
   >
-    <img src="/images/logo.svg" alt="Company Logo" />
+    <img src="~/assets/images/logo.svg" alt="Company Logo" />
 
     <!-- Mobile Menu Icon -->
     <img
-      src="/images/icon-hamburger.svg"
+      src="~/assets/images/icon-hamburger.svg"
       alt="Mobile Menu Icon"
       class="inline sm:hidden"
       @click="isMenuOpened = !isMenuOpened"
@@ -36,7 +36,7 @@
       </h1>
 
       <img
-        src="/images/icon-arrow-down.svg"
+        src="~/assets/images/icon-arrow-down.svg"
         class="mx-auto h-[110px]"
         alt="Arrow down Icon"
       />
@@ -156,7 +156,7 @@
     <div class="flex flex-col sm:flex-row sm:mx-20 gap-16 pb-5">
       <div class="flex flex-col justify-center items-center text-center">
         <img
-          src="/images/image-emily.jpg"
+          src="~/assets/images/image-emily.jpg"
           alt="Client Avatar 1"
           class="rounded-full h-[72px] w-[72px]"
         />
@@ -173,7 +173,7 @@
 
       <div class="flex flex-col justify-center items-center text-center">
         <img
-          src="/images/image-thomas.jpg"
+          src="~/assets/images/image-thomas.jpg"
           alt="Client Avatar 1"
           class="rounded-full h-[72px] w-[72px]"
         />
@@ -190,7 +190,7 @@
 
       <div class="flex flex-col justify-center items-center text-center">
         <img
-          src="/images/image-jennie.jpg"
+          src="~/assets/images/image-jennie.jpg"
           alt="Client Avatar 1"
           class="rounded-full h-[72px] w-[72px]"
         />
@@ -217,8 +217,8 @@
   </section>
 
   <footer class="bg-footerblue h-[350px]">
-    <figure class="pt-14">
-      <img src="/images/logo-green.svg" class="mx-auto block" />
+    <figure class="pt-16">
+      <img src="~/assets/images/logo-green.svg" class="mx-auto block" />
     </figure>
 
     <div class="flex justify-center gap-8 mb-16 mt-10">
@@ -240,10 +240,10 @@
     </div>
 
     <div class="flex justify-center gap-5">
-      <img src="/images/icon-facebook.svg" alt="Facebook Icon" />
-      <img src="/images/icon-instagram.svg" alt="Instagram Icon" />
-      <img src="/images/icon-twitter.svg" alt="Twitter Icon" />
-      <img src="/images/icon-pinterest.svg" alt="Pinterest Icon" />
+      <img src="~/assets/images/icon-facebook.svg" alt="Facebook Icon" />
+      <img src="~/assets/images/icon-instagram.svg" alt="Instagram Icon" />
+      <img src="~/assets/images/icon-twitter.svg" alt="Twitter Icon" />
+      <img src="~/assets/images/icon-pinterest.svg" alt="Pinterest Icon" />
     </div>
   </footer>
 </template>
@@ -255,92 +255,88 @@ const isMenuOpened = ref(false);
 </script>
 
 <style>
+.transform-bg,
+.standout-bg,
+.graphic-design-bg,
+.bg-gallery-cone,
+.bg-gallery-milkbottles,
+.bg-gallery-sugar-cubes,
+.bg-gallery-orange,
+.photography-bg {
+  background-position: center;
+  background-size: cover;
+}
+
 .hero-bg {
-  background-image: url(images/mobile/image-header.jpg);
+  background-image: url(./assets/images/mobile/image-header.jpg);
   background-position: top;
   background-size: cover;
 
   @media (min-width: 1200px) {
-    background-image: url(images/desktop/image-header.jpg);
+    background-image: url(./assets/images/desktop/image-header.jpg);
   }
 }
 
 .transform-bg {
-  background-image: url(images/mobile/image-transform.jpg);
-  background-position: center;
-  background-size: cover;
+  background-image: url(./assets/images/mobile/image-transform.jpg);
 
   @media (min-width: 1200px) {
-    background-image: url(images/desktop/image-transform.jpg);
+    background-image: url(./assets/images/desktop/image-transform.jpg);
   }
 }
 .standout-bg {
-  background-image: url(images/mobile/image-stand-out.jpg);
-  background-position: center;
-  background-size: cover;
+  background-image: url(./assets/images/mobile/image-stand-out.jpg);
 
   @media (min-width: 1200px) {
-    background-image: url(images/desktop/image-stand-out.jpg);
+    background-image: url(./assets/images/desktop/image-stand-out.jpg);
   }
 }
 
 .graphic-design-bg {
-  background-image: url(images/mobile/image-graphic-design.jpg);
-  background-position: center;
-  background-size: cover;
+  background-image: url(./assets/images/mobile/image-graphic-design.jpg);
 
   @media (min-width: 1200px) {
-    background-image: url(images/desktop/image-graphic-design.jpg);
+    background-image: url(./assets/images/desktop/image-graphic-design.jpg);
   }
 }
 
 .photography-bg {
-  background-image: url(images/mobile/image-photography.jpg);
-  background-position: center;
-  background-size: cover;
+  background-image: url(./assets/images/mobile/image-photography.jpg);
 
   @media (min-width: 1200px) {
-    background-image: url(images/desktop/image-photography.jpg);
+    background-image: url(./assets/images/desktop/image-photography.jpg);
   }
 }
 
 .bg-gallery-milkbottles {
-  background-image: url(images/mobile/image-gallery-milkbottles.jpg);
-  background-position: center;
-  background-size: cover;
+  background-image: url(./assets/images/mobile/image-gallery-milkbottles.jpg);
 
   @media (min-width: 1200px) {
-    background-image: url(images/desktop/image-gallery-milkbottles.jpg);
+    background-image: url(./assets/images/desktop/image-gallery-milkbottles.jpg);
   }
 }
 
 .bg-gallery-orange {
-  background-image: url(images/mobile/image-gallery-orange.jpg);
-  background-position: center;
-  background-size: cover;
+  background-image: url(./assets/images/mobile/image-gallery-orange.jpg);
 
   @media (min-width: 1200px) {
-    background-image: url(images/desktop/image-gallery-orange.jpg);
+    background-image: url(./assets/images/desktop/image-gallery-orange.jpg);
   }
 }
 
 .bg-gallery-sugar-cubes {
-  background-image: url(images/mobile/image-gallery-sugar-cubes.jpg);
-  background-position: center;
-  background-size: cover;
+  background-image: url(./assets/images/mobile/image-gallery-sugar-cubes.jpg);
 
   @media (min-width: 1200px) {
-    background-image: url(images/desktop/image-gallery-sugarcubes.jpg);
+    background-image: url(./assets/images/desktop/image-gallery-sugarcubes.jpg);
   }
 }
 
 .bg-gallery-cone {
-  background-image: url(images/mobile/image-gallery-cone.jpg);
-  background-position: center;
-  background-size: cover;
+  background-image: url(./assets/images/mobile/image-gallery-cone.jpg);
 
   @media (min-width: 1200px) {
-    background-image: url(images/desktop/image-gallery-cone.jpg);
+    background-image: url(./assets/images/desktop/image-gallery-cone.jpg);
   }
 }
 
